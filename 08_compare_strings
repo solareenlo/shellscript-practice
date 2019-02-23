@@ -1,0 +1,39 @@
+#!/bin/bash
+# 文字列の比較には[]も使われますが,
+# 最近では[[]]がよく使われる.
+
+read -p "Name? " name
+# if [ "$name" = "taro" ]; then
+#   echo "welcome"
+# fi
+
+# と書くところを,
+# if [[ $name = "taro" ]]; then
+#   echo "welcome"
+# fi
+# と書く.
+
+# = or == が文字列が等しいかどうかを調べる
+# != が文字列が等しくないかどうかを調べる
+# -z が文字列が0かどうかを調べる
+# =~ が正規表現を使う
+
+# if [[ -z $name ]]; then
+#   echo "Name is empty ..."
+# fi
+# 上記を実行すると,
+# ./08_compare_strings
+# > Name?
+# ENTER
+# > Name is empty ...
+# となる.
+
+if [[ $name =~ ^t ]]; then
+  echo "Name is starting with t..."
+fi
+# 上記を実行すると,
+# ./08_compare_strings
+# > Name?
+# taro
+# > Name is starting with t...
+# となる.
