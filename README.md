@@ -27,6 +27,8 @@ ls -l
 > hello
 ```
 ## 文字列を表示する
+01_helloの中身を見てください.
+
 ```bash
 vim hello
 i
@@ -46,3 +48,6 @@ ESC
 > foo
 > bar
 ```
+
+## 変数を使う
+02_variableの中身を見てください.

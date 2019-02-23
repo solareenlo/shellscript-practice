@@ -1,0 +1,22 @@
+#!/bin/bash
+# 変数を使う
+
+# name = "taguchi" はエラーになる. =の両脇にスペースを入れるとエラーになる.
+name="taguchi"
+readonly name2="taro" # 読み取り専用になる
+# name2="hanako" エラーになる
+
+echo "morning $name"
+echo "hello $name"
+echo "by ${name}san"
+echo 'by ${name}san' # シングルクォーテーションだと${name}がそのまま表示される
+echo "hello $name2"
+
+# ./02_variable
+# と実行すると
+# > morning taguchi
+# > hello taguchi
+# > by taguchisan
+# > by ${name}san
+# > hello taro
+# と表示される.
