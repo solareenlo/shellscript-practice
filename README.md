@@ -26,3 +26,23 @@ ls -l
 ./hello
 > hello
 ```
+## 文字列を表示する
+```bash
+vim hello
+i
+#!/bin/bash
+# コメントは#を使うと文末までコメントアウトしてくれる
+
+echo "hello world"
+echo 'hello world'
+
+echo "foo"; echo "bar";
+ESC
+:wq
+
+./hello
+> hello world
+> hello world
+> foo
+> bar
+```
