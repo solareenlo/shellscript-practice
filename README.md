@@ -1,4 +1,4 @@
-#shell-script-practice
+# shellscript-practice
 
 ## 初めてのシェルスクリプト
 - シェルとはOSと対話するためにインターフェースであり, それのスクリプトがシェルスクリプト.
