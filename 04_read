@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# 1.
+# read name
+# echo "hello $name"
+
+# 上記を実行すると
+# ./04_read taro
+# > hello taro
+
+
+# 2.
+# read -p "Name: " name
+# echo "hello $name"
+
+# 上記を実行すると
+# ./04_read
+# > Name:
+# taro
+# hello taro
+
+
+# 3.
+read -p "Pick 3 colors: " c1 c2 c3
+echo $c1
+echo $c2
+echo $c3
+
+# 上記を実行すると
+# ./04_read
+# > Pick 3 colors:
+# red green blue
+# > red
+# > green
+# > blue
+
+# 色を多く入力したり, 少なく入力すると
+# 多い場合はc3に複数個の文字列が代入され,
+# 少ない場合はc3が表示されない.
