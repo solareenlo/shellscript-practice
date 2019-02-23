@@ -1,0 +1,16 @@
+#!/bin/bash
+#配列
+
+colors=(red green blue)
+echo ${colors[0]} # red
+echo ${colors[1]} # green
+echo ${colors[2]} # blue
+echo ${colors[@]} # red green blue
+echo ${#colors[@]} # 3
+
+# 配列の要素に代入
+colors[1]=silver
+# 配列の末尾に代入
+colors+=(white black)
+echo ${colors[@]} # red silver blue white black
+echo ${#colors[@]} # 5
