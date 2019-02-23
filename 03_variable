@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# 第１引数 = $1, 第2引数 = $2, ...
+echo "hello $1"
+
+# ./03_variable a aa aaa
+echo $0 # ./03_variable
+echo $# # 3 # = 引数の個数
+echo $@ # a aa aaa @ = 引数全部
