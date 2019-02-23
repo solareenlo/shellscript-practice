@@ -1,0 +1,23 @@
+#!/bin/bash
+# if
+
+read -p "Name? " name
+# if test "$name" = "taro"
+if [ "$name" = "taro" ]
+then
+  echo "welcome"
+elif [ "$name" = "hanako" ]
+then
+  echo "welcome too"
+else
+  echo "you are not allowed"
+fi
+
+# 以下のように; thenという書き方もあります.
+# if [ "$name" = "taro" ]; then
+#   echo "welcome"
+# elif [ "$name" = "hanako" ]; then
+#   echo "welcome too"
+# else
+#   echo "you are not allowed"
+# fi
