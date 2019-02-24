@@ -98,3 +98,12 @@ blue
 
 ## whileを使って, テキストファイルの中身を1行ずつ読み込む
 12_read_lineをご覧ください.
+
+## catとwhileを使って, catで表示するものに行番号を付ける
+```bash
+cat colors.txt | ./13_add_number
+# 1 red
+# 2 green
+# 3 blue
+# と表示される
+```
