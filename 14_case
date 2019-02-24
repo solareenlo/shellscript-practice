@@ -1,0 +1,17 @@
+#!/bin/bash
+
+read -p "Signal color? " color
+case "$color" in
+  red)
+    echo "stop"
+    ;;
+  blue|green)
+    echo "go"
+    ;;
+  yello)
+    echo "caution"
+    ;;
+  *)
+    echo "wrong signal"
+    ;;
+esac

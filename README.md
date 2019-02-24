@@ -107,3 +107,6 @@ cat colors.txt | ./13_add_number
 # 3 blue
 # と表示される
 ```
+
+## caseを使って条件分岐を行う
+14_caseをご覧ください.
