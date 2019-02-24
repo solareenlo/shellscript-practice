@@ -134,3 +134,6 @@ cat colors.txt | ./13_add_number
 
 ## 関数を使う
 16_funcitonをご覧ください
+
+## 変数スコープについて
+17_scopeをご覧ください.

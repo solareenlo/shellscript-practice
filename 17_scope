@@ -1,0 +1,29 @@
+#!/bin/bash
+# 変数スコープ
+
+hello() {
+  name="taro"
+  echo "hello ..."
+}
+
+hello
+# hello ...
+# と表示される
+echo $name
+# taro
+# と表示される
+# 関数の中の変数にアクセスできる
+# それをさせないようにするには
+
+hello2() {
+  local name2="sola"
+  echo "hello world"
+}
+
+hello2
+# hello world
+# と表示される
+echo $name2
+# 何も表示されない
+# name2はlocalが付いているので,
+# hello2の関数内だけで使える
