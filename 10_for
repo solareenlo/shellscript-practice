@@ -1,0 +1,36 @@
+#!/bin/bash
+# for
+
+# 1 2 3 4 5 と縦に表示
+for i in 1 2 3 4 5
+do
+  echo $i
+done
+
+# 1 2 3 4 5 と縦に表示
+for i in {1..5}
+do
+  echo $i
+done
+
+# 1 2 3 4 5 と縦に表示
+for i in {1..5}; do
+  echo $i
+done
+
+# 1 2 3 4 5 と縦に表示
+for ((i=1; i<=5; i++)); do
+  echo $i
+done
+
+# red green blue と縦に表示
+colors=(red green blue)
+for color in ${colors[@]}; do
+  echo $color
+done
+
+# スペースで区切られた日付の要素を縦に表示
+# for item in `date`; do
+for item in $(date); do
+  echo $item
+done
