@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# function hello() {
+#   echo "hello ..."
+# }
+# function は省略することもでき
+hello() {
+  echo "hello ..."
+}
+
+hello
+# hello ...
+# と表示される
+
+# function へは引数を渡すことももちろんでき
+hello2() {
+  echo "hello $1"
+}
+hello2 taro
+# hello taro
+# と表示される
+
+# 関数の中でifももちろん使える
+hello3() {
+  if [[ $1 == "taro" ]]; then
+    return 0 # 0 がtrue
+  else
+    return 1 # 1 がfalse
+  fi
+}
+
+# 直前の終了ステータスは$?で調べることができる
+hello3 taro; echo $?
+# 0
+# と表示される
+hello3 sola; echo $?
+# 1
+# と表示される

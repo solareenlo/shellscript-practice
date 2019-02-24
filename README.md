@@ -131,3 +131,6 @@ cat colors.txt | ./13_add_number
 > wrong signal
 ```
 15_selectをご覧ください.
+
+## 関数を使う
+16_funcitonをご覧ください
