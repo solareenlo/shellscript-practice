@@ -110,3 +110,24 @@ cat colors.txt | ./13_add_number
 
 ## caseを使って条件分岐を行う
 14_caseをご覧ください.
+
+## selectを使ってメニューを作る
+```bash
+./15_select
+> 1) red
+> 2) blue
+> 3) green
+> 4)yello
+> #?
+1
+> stop
+2
+> go
+3
+> go
+4
+> caution
+5
+> wrong signal
+```
+15_selectをご覧ください.
