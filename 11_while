@@ -1,0 +1,37 @@
+#!/bin/bash
+# while
+
+i=0
+# 1 2 3 と縦に表示される
+# while ((i < 3)); do
+#   ((i++))
+#   echo $i
+# done
+
+# continue でwhile処理をスキップ
+# break でwhile処理を強制終了
+
+# 1 2 3 5 6 7 と縦に表示される
+# while((i < 10));do
+#   ((i++))
+#   if ((i == 4)); then
+#     continue
+#   fi
+#   if((i == 8)); then
+#     break
+#   fi
+#   echo $i
+# done
+
+# : はnullコマンドと言われていて, いつでも条件が成立するコマンド
+# これを使って無限ループを作れる
+# quit と打ち込まれると終了するプログラム
+while :
+do
+  read -p "Command? " cmd
+  if [[ $cmd == "quit" ]]; then
+    break
+  else
+    echo "$cmd"
+  fi
+done
