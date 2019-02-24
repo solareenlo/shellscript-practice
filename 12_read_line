@@ -1,0 +1,13 @@
+#!/bin/bash
+
+i=1
+# colors.txtの中身が1行ずつ読み込まれて標準出力に表示される
+# while read line; do
+#   echo $i "$line"
+#   ((i++))
+# done < colors.txt
+
+while read line; do
+  echo $i "$line"
+  ((i++))
+done

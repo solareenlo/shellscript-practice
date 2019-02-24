@@ -85,3 +85,16 @@ $@ = 全部の引数
 
 ## whileでループ処理を行う
 11_whileをご覧ください.
+
+## catでテキストファイルの中身に文字を保存する
+```bash
+cat > colors.txt
+red
+green
+blue
+# CTL + d
+# で保存
+```
+
+## whileを使って, テキストファイルの中身を1行ずつ読み込む
+12_read_lineをご覧ください.
